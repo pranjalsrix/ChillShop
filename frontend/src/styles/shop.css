@@ -1,0 +1,189 @@
+/* shop.css */
+
+.shop-page {
+  min-height: 100vh;
+
+  background: #0f0f0f;
+  color: #ffffff;
+
+  padding: 2rem 6% 5rem;
+}
+
+/* HERO */
+
+.shop-hero {
+  padding: 5rem 0 4rem;
+
+  max-width: 800px;
+}
+
+.shop-tag {
+  display: inline-block;
+
+  color: #ac6cff;
+
+  letter-spacing: 2px;
+  font-size: 0.85rem;
+
+  margin-bottom: 1.2rem;
+}
+
+.shop-hero h1 {
+  font-size: 4rem;
+  line-height: 1.05;
+
+  margin-bottom: 1.5rem;
+}
+
+.shop-hero p {
+  color: #a1a1a1;
+
+  font-size: 1.05rem;
+  line-height: 1.9;
+
+  max-width: 620px;
+}
+
+/* CONTROLS */
+
+.shop-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 1rem;
+
+  margin-bottom: 3rem;
+}
+
+/* SEARCH */
+
+.search-wrapper {
+  flex: 1;
+}
+
+.search-bar {
+  width: 100%;
+
+  background: #171717;
+
+  border: 1px solid rgba(255, 255, 255, 0.06);
+
+  border-radius: 18px;
+
+  padding: 16px 20px;
+
+  color: #ffffff;
+
+  font-size: 0.95rem;
+
+  outline: none;
+
+  transition: 0.3s ease;
+}
+
+.search-bar:focus {
+  border-color: rgba(172, 108, 255, 0.45);
+}
+
+/* SORT */
+
+.sort-dropdown {
+  background: #171717;
+
+  border: 1px solid rgba(255, 255, 255, 0.06);
+
+  color: #ffffff;
+
+  padding: 16px 18px;
+
+  border-radius: 16px;
+
+  outline: none;
+
+  cursor: pointer;
+
+  min-width: 220px;
+}
+
+/* PRODUCTS */
+
+.shop-products {
+  margin-top: 1rem;
+}
+
+/* EMPTY */
+
+.empty-products {
+  text-align: center;
+
+  padding: 5rem 0;
+}
+
+.empty-products h3 {
+  font-size: 2rem;
+
+  margin-bottom: 0.7rem;
+}
+
+.empty-products p {
+  color: #9a9a9a;
+}
+
+/* LOADER */
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+
+  padding: 4rem 0;
+}
+
+.loader {
+  width: 42px;
+  height: 42px;
+
+  border: 3px solid #2a2a2a;
+  border-top: 3px solid #ffffff;
+
+  border-radius: 50%;
+
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .shop-hero h1 {
+    font-size: 3rem;
+  }
+
+  .shop-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .sort-dropdown {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .shop-page {
+    padding: 1rem 5% 4rem;
+  }
+
+  .shop-hero {
+    padding: 3rem 0;
+  }
+
+  .shop-hero h1 {
+    font-size: 2.3rem;
+  }
+}
